@@ -238,6 +238,7 @@ public final class GeyserServer {
                 .option(RakChannelOption.RAK_PACKET_LIMIT, rakPacketLimit)
                 .option(RakChannelOption.RAK_GLOBAL_PACKET_LIMIT, rakGlobalPacketLimit)
                 .option(RakChannelOption.RAK_SEND_COOKIE, rakSendCookie)
+                .option(RakChannelOption.RAK_SESSION_TIMEOUT, 600000L)
                 .childHandler(serverInitializer);
     }
 
